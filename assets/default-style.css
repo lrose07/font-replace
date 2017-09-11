@@ -1,0 +1,9 @@
+* {
+    outline: 1px dotted green;
+}
+
+.font-info-box {
+    background-color: aquamarine;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

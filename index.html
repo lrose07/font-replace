@@ -1,22 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Font Replace</title>
+    <head>
+        <title>Font Replace</title>
     
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/default-style.css">
-  </head>
-  <body>
-    
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/default-style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row"> <!-- sticky -->
+                <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10">logo</div>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">login</div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3 col-md-2 col-lg-2 col-xl-1">
+                    nav panel
+                </div>
+                <div class="col-12 col-sm-9 col-md-10 col-lg-10 col-xl-11">main panel
+                    <!-- font box -->
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 font-info-box">
+                        <h3>Font Name</h3>
+                        <p>Here is an example sentence in the font. It should be long enough to wrap to two lines.</p>
+                        <p>See it on this site!</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Custom text">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">See it!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="container-fluid" id="options-menu">
+            <div class="row">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    Serif
+                                </label>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    San-serif
+                                </label>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    Handwriting
+                                </label>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    Display
+                                </label>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    Monospace
+                                </label>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Update</a>
+                        <a class="dropdown-item" href="#">Reset</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thickness</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Update</a>
+                        <a class="dropdown-item" href="#">Reset</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Slant</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Update</a>
+                        <a class="dropdown-item" href="#">Reset</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Width</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Update</a>
+                        <a class="dropdown-item" href="#">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </body>
 </html>
